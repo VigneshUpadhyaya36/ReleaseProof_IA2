@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReleaseProof Dashboard</title>
+    <!-- Ethers.js CDN Injection -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ReleaseProof Integrity Dashboard</h1>
+    <button id="connectWalletBtn">Connect / Refresh MetaMask</button>
+    <div id="walletStatus">Status: Disconnected</div>
+
+    <input type="text" id="contractAddress" placeholder="Paste Deployed Smart Contract Address Here" style="border-color: #2563eb; border-width: 2px;">
+
+    <section>
+        <h2>1. Administrator: Authorize Publisher</h2>
+        <input type="text" id="pubAddress" placeholder="Publisher Wallet Address (Account 2)">
+        <button id="authBtn">Authorize Publisher</button>
+    </section>
+
+    <section>
+        <h2>2. Publisher: Register Release</h2>
+        <input type="text" id="relName" placeholder="Release Name (e.g., Security Config)">
+        <input type="text" id="relVersion" placeholder="Version (e.g., 1.0)">
+        <input type="file" id="fileToRegister">
+        <button id="registerBtn">Hash File & Register to Blockchain</button>
+        <div class="result" id="registerResult">Awaiting registration...</div>
+    </section>
+
+    <section>
+        <h2>3. Verifier: Check File Integrity</h2>
+        <input type="number" id="verifyId" placeholder="Release ID (e.g., 1)">
+        <input type="file" id="fileToVerify">
+        <button id="verifyBtn">Verify Local File</button>
+        <div class="result" id="verifyResult">Verification status will appear here.</div>
+        <div class="result" id="blockchainData" style="font-size: 0.85em; background: #f8fafc; border-left-color: #64748b;">Blockchain record details will appear here.</div>
+    </section>
+
+    <section>
+        <h2>4. Publisher: Revoke Release</h2>
+        <input type="number" id="revokeId" placeholder="Release ID to Revoke (e.g., 1)">
+        <button id="revokeBtn" style="background-color: #dc2626;">Revoke Release</button>
+        <div class="result" id="revokeResult" style="border-left-color: #dc2626; display: none;"></div>
+    </section>
+
+    <!-- Local App Logic -->
+    <script src="ethers-integration.js"></script>
+</body>
+</html>

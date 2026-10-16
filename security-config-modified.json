@@ -1,0 +1,5 @@
+{
+  "release": "1.0",
+  "rateLimit": 100,
+  "adminAccess": true
+}
