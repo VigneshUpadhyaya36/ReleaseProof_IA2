@@ -18,7 +18,7 @@ When a publisher wishes to release a file, the frontend application computes a c
 * **Network Name:** Ganache Local Testnet
 * **RPC Endpoint URL:** `http://127.0.0.1:7545`
 * **Chain ID:** 1337
-* **Deployed Contract Address:** `[PASTE_YOUR_CONTRACT_ADDRESS_HERE]`
+* **Deployed Contract Address:** `0xfe63631393F8611191AE06cD341F5D940fB34897`
 
 ## Execution and MetaMask Connection Workflow
 1. **Network Setup:** Initialize a local Ganache instance operating on Network ID 1337. Import three distinct test wallets into the MetaMask extension to represent the system Administrator, an authorized Publisher, and an end-user Verifier.
@@ -50,19 +50,36 @@ During the development and testing phases, specific network and logic errors wer
 ## Technical Evidence & Project Screenshots
 
 ### 1. Smart Contract Compilation
-[Insert Screenshot Here: Remix IDE showing successful compilation with Solidity 0.8.20 and the green checkmark]
+<img width="1917" height="861" alt="Screenshot 2026-10-14 221826" src="https://github.com/user-attachments/assets/95ebccd6-8f4c-4256-8820-4ba5c48b17cc" />
+
 
 ### 2. Smart Contract Deployment
-[Insert Screenshot Here: Remix IDE terminal logs showing successful deployment and the deployed contract address]
+<img width="1917" height="872" alt="Screenshot 2026-10-14 221908" src="https://github.com/user-attachments/assets/1068cea3-ba1b-49c0-b3b1-79e6d0fffbec" />
+
 
 ### 3. MetaMask Wallet Connection & UI Integration
-[Insert Screenshot Here: The web dashboard displaying the connected wallet address via Ethers.js]
+<img width="1915" height="962" alt="Screenshot 2026-10-14 222209" src="https://github.com/user-attachments/assets/77467a79-e319-42df-b6f8-eb28494ede5f" />
+<img width="1917" height="958" alt="Screenshot 2026-10-14 222221" src="https://github.com/user-attachments/assets/72817d0a-3a48-4574-88db-fb4fa7165eff" />
+<img width="1906" height="957" alt="Screenshot 2026-10-14 222411" src="https://github.com/user-attachments/assets/242a3799-a084-43ca-b04b-e4e475ff7de1" />
+<img width="1903" height="950" alt="Screenshot 2026-10-14 222421" src="https://github.com/user-attachments/assets/96b64449-2a4b-48cb-b0ba-5f7a9a5eb2ce" />
+
+
 
 ### 4. Successful Transaction (File Registration)
-[Insert Screenshot Here: The web dashboard displaying the successful SHA-256 hash generation and registration receipt]
+<img width="1910" height="957" alt="Screenshot 2026-10-14 223512" src="https://github.com/user-attachments/assets/173ea65f-9398-488f-98c9-a8677c88a270" />
+
+<img width="1901" height="945" alt="Screenshot 2026-10-14 223525" src="https://github.com/user-attachments/assets/96a17731-f75e-49fb-a88f-e228474fb229" />
+
 
 ### 5. Blockchain Data Retrieval (Integrity Verification)
-[Insert Screenshot Here: The web dashboard displaying a MATCH/MISMATCH result alongside the fetched on-chain metadata]
+<img width="1902" height="947" alt="Screenshot 2026-10-14 223840" src="https://github.com/user-attachments/assets/a1ef61ee-2ede-4ac6-817b-03de1b7cd9f0" />
+<img width="1008" height="483" alt="Screenshot 2026-10-14 224048" src="https://github.com/user-attachments/assets/4d7f387a-6db8-492c-b9c9-9c6c28053443" />
+<img width="1906" height="943" alt="Screenshot 2026-10-14 224816" src="https://github.com/user-attachments/assets/9bb6a259-5568-4b1f-acb4-7f1e17b19c13" />
+
+
 
 ### 6. Failed Transaction (Unauthorized Attempt)
-[Insert Screenshot Here: MetaMask or browser alert showing the reverted transaction due to lack of publisher authorization]
+<img width="1075" height="638" alt="Screenshot 2026-10-14 225140" src="https://github.com/user-attachments/assets/ff597ce1-16b4-4568-9fad-abc2a8f448b8" />
+<img width="1901" height="950" alt="Screenshot 2026-10-14 224411" src="https://github.com/user-attachments/assets/03c7d111-98d1-49cb-8fa2-6eecb0f7377c" />
+
+
